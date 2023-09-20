@@ -1,0 +1,239 @@
+#container {
+    border: 3px solid black;
+    width: 600px;
+}
+
+.animediv {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear; /* Keeps the final style of the animation */
+    background-color: black;
+    color: white;
+    border: 3px inset rgb(86, 90, 89);
+    text-align: center;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div1{
+    animation-timing-function: ease;
+}
+
+#div2{
+    animation-timing-function: linear;
+}
+
+#div3{
+    animation-timing-function: ease-in;
+}
+
+#div4{
+    animation-timing-function: ease-in-out;
+}
+
+#div5{
+    animation-timing-function: ease-out;
+}
+
+ @keyframes mymove {
+    from{left: 0px;}
+    to {left: 490px;}
+ }
+
+ #cal__container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ }
+
+ #date__container {
+    width: 250px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 500;
+    font-size: 150px;
+    text-align: center;
+ }
+
+ #full__date {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    color: white;
+    width: 250px;
+    height: 40px;
+    background-color: #4CAF50;
+ }
+
+ #full__time {
+    height: 20%;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 800;
+    font-size: 25px;
+    color: #2b2e2b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ #translate__container {
+    position: relative;
+    
+    background-color: cadetblue;
+    width: 610px;
+    height: 100px;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    gap:2px;
+
+ }
+
+ #div6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 5px;
+    background-color: azure;
+    width: 90px;
+    height: 90px;
+    animation: zoom 2s 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+ }
+
+ @keyframes zoom {
+    from{transform: translateX(0px)}
+    to {transform: translateX(510px);}
+    
+ }
+
+
+ #div7 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 5px;
+    background-color: azure;
+    width: 90px;
+    height: 90px;
+    animation: zoom2 2s 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+ @keyframes zoom2 {
+    from{transform: translateX(0px)}
+    to {transform: translateX(410px);}
+    
+ }
+
+ #div8 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 5px;
+    background-color: azure;
+    width: 90px;
+    height: 90px;
+    animation: zoom3 2s 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+ @keyframes zoom3 {
+    from{transform: translateX(0px)}
+    to {transform: translateX(310px);}
+    
+ }
+ #div9 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 5px;
+    background-color: azure;
+    width: 90px;
+    height: 90px;
+    animation: zoom4 2s 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+ @keyframes zoom4 {
+    from{transform: translateX(0px)}
+    to {transform: translateX(210px);}
+    
+ }
+
+ #div10 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 5px;
+    background-color: azure;
+    width: 90px;
+    height: 90px;
+    animation: zoom5 2s 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+ @keyframes zoom5 {
+    from{transform: translateX(0px)}
+    to {transform: translateX(110px);}
+    
+ }
+
+ #div11 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 5px;
+    background-color: azure;
+    width: 90px;
+    height: 90px;
+    animation: zoom6 2s 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+ @keyframes zoom6 {
+    from{transform: translateX(0px)}
+    to {transform: translateX(10px);}
+    
+ }
+
+ #transition__container {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 2s;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding:2px;
+ }
+ #transition__container:hover {
+    width:610px;
+    justify-content: center;
+ }
+
